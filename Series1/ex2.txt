@@ -1,0 +1,15 @@
+What are the classes defined in this Java program ?
+- Item, Groceries, GroceriesList
+
+What are the instance variables of these classes:
+- Item: label, quantity, unitPrice
+- Groceries: items
+- GroceriesList: no instance variables
+
+What are the operations perfomed by the main method ?
+- The main method instanciates the class Groceries and different Items(Mineral Water, Apples, Egg)
+- For each item instanciated by the class Item, there is: a label of the item; a price and a quantity
+- The main method inserts the items: mineral water and apples in the groceries object
+- The main method modifies the quantity of eggs from 6 to 12.
+- The main method inserts the Item egg in the groceries object
+- The main method prints the price and the contains of the Groceries object, that contains different quantities of different items.

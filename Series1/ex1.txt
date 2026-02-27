@@ -1,0 +1,45 @@
+- Student:
+    => variables: instance
+        - studentID: integer
+        - firstName: string
+        - lastName: string
+    => methods:
+        + getID(); setID(integer)
+        + getFirstName(); setFirstName(string)
+        + getLastName(); setFirstName(string)
+
+- Teacher:
+    => variables: instance
+        - teacherID: integer
+        - firstName: string
+        - lastName: string
+    => methods:
+        + getTeacherID(); setTeacherID(integer)
+        + getFirstName(); setFirstName(string)
+        + getLastName(); setLastName(string)
+
+- Course:
+    => variables: instance
+        - courseCode: string
+        - courseTitle: string
+        - titularTeacher: Teacher
+    => methods:
+        + getCourseCode(); setCourseCode(string)
+        + getCourseTitle(); setCourseTitle(string)
+        + getTitularTeacher(); setTitularTeacher(string)
+
+- Calendar:
+    => variables: instance
+        - course: Course
+        - quadrimester: integer
+        - roomID: string
+        - day: Day
+        - time: Time
+        - duration: Time
+    => methods:
+        + getCourse(); setCourse(Course)
+        + getQuadrimester(); setQuadrimester(integer)
+        + getRoomID(); setRoomID(string)
+        + getDay(); setDay(Day)
+        + getTime(); setTime(Time)
+        + getDuration(); setDuration(Time)

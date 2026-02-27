@@ -1,0 +1,52 @@
+# Compiled Java files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+*.nar
+
+# Build directories
+/target/
+/build/
+/bin/
+/out/
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Maven specific
+.mvn/
+mvnw
+mvnw.cmd
+
+# Gradle specific
+.gradle/
+gradle/
+gradlew
+gradlew.bat
