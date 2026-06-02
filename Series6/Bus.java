@@ -10,4 +10,8 @@ public class Bus extends Transport {
         this.travelledPassengers = 0;
     }
 
+    public int getTravalledPassengers() {
+        return this.travelledPassengers;
+    }
+
 }

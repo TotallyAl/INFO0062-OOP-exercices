@@ -33,6 +33,7 @@ public class HighDensity {
                 String[] callingCodeStr = lineParts[4].split("\\+");
 
                 if (callingCodeStr.length == 1) {
+                    sc.close();
                     throw new IllegalArgumentException("Callingcode format is wrong: '" + line + "'");
                 }
 
@@ -56,6 +57,7 @@ public class HighDensity {
                 location.add(city);
 
             } else {
+                sc.close();
                 throw new IllegalArgumentException("Unknown locationType variable for string: '" + line + "'");
             }
 
