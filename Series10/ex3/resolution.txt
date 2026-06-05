@@ -1,0 +1,13 @@
+Question 3:
+
+1. The class C has access to the variable n ?
+- No. Even though C extends to B, which extends to A. Since n has the default visibility keyword, it will 
+    only be accessible to classes that are in the same package. Since C has a different package than B(and A), class
+    C won't be able to access the variable n.
+
+2. The class D has access to the variable A.m:
+- No. Since A is not a public class, it will only be able to be seen to classes that are in the same package. Which is
+not the case for the class D.
+
+3. The class D has access to the variable B.m:
+- 
