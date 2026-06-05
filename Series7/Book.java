@@ -10,47 +10,43 @@
  * @author: J.-F. Grailet
  */
 
-public class Book implements Cloneable
-{
+public class Book implements Cloneable {
     private String author, title;
-    
-    public Book(String author, String title)
-    {
+
+    public Book(String author, String title) {
         this.author = author;
         this.title = title;
     }
-    
-    public String getAuthor() { return author; }
-    public String getTitle() { return title; }
-    
-    public String toString()
-    {
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String toString() {
         return author + " - " + title;
     }
-    
-    public boolean equals(Object obj)
-    {
-        if(!(obj instanceof Book)) // N.B.: "null instanceof Book" is also false
+
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Book)) // N.B.: "null instanceof Book" is also false
             return false;
-        
+
         Book bis = (Book) obj;
         return bis.author.equals(author) && bis.title.equals(title);
     }
-    
-    public int hashCode()
-    {
+
+    public int hashCode() {
         return author.hashCode() + title.hashCode();
     }
-    
-    public Object clone()
-    {
+
+    public Object clone() {
         Book myClone = null;
-        try
-        {
+        try {
             myClone = (Book) super.clone();
-        }
-        catch(CloneNotSupportedException e)
-        {
+        } catch (CloneNotSupportedException e) {
             throw new InternalError("Unable to clone a book");
         }
         return myClone;

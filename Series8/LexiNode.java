@@ -1,5 +1,7 @@
 package Series8;
 
+import java.util.Vector;
+
 public class LexiNode<T> {
 
     private String label;
